@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Task 1
+
+//reverse a string input: hello output : olleh
+
+let str='hello';
+let even='';
+for(i=str.length-1;i>=0;i--){
+    even+=str[i];
+}
+console.log(even);
+
+
+
+
+
+//Task 2
+//find a even numbers sum numbers sum in an array - [23,54,67,64,46,95,98]
+
+let arr=[23,54,67,64,46,95,98];
+let sum=0;
+let count=0;
+for(i=0;i<arr.length;i++){
+    if(arr[i]%2==0){
+        console.log(arr[i]);
+        sum+=arr[i];
+    }
+    else{
+        console.log(arr[i]);
+        count+=arr[i];
+    }
+}
+ console.log(sum + " Sum of even numbers");
+ console.log(count +" sum od odd numbers")
+
+
+
+
+
+
+ //Task 3
+
+ //iterate an object values and keys using for of loop
+
+
+ let obj={
+    name:'ram',
+    age:23,
+ }
+ for(let[key,value] of  Object.entries(obj)){
+    console.log(key,value);
+ }
+
+
+</script>
+
+</body>
+</html>
